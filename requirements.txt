@@ -1,0 +1,12 @@
+# Runtime + build dependencies.
+# Bounded below (known-good minimum) AND above (next major) so a surprise major
+# release cannot silently break the build. For a fully reproducible build, pin
+# exact versions with hashes (e.g. `pip-compile --generate-hashes`) — deferred to
+# avoid disturbing the current working CI resolution.
+opencv-python>=4.5.0,<5
+numpy>=1.20.0,<3
+pandas>=1.3.0,<3
+openpyxl>=3.0.0,<4
+Pillow>=8.0.0,<13
+pyinstaller>=5.0.0,<8
+imageio-ffmpeg>=0.4.0,<1

@@ -1,0 +1,61 @@
+name: Build & Release CordInsight
+
+on:
+  push:
+    tags:
+      - "v*"          # build + release only on a version tag (saves Actions minutes)
+  workflow_dispatch:  # manual build without releasing
+
+jobs:
+  get-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Extract version from code
+        id: version
+        run: |
+          VERSION=$(grep -oP 'APP_VERSION = "\K[^"]+' cordinsight.py)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Detected version: $VERSION"
+      - name: Validate tag matches APP_VERSION
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          [ "$GITHUB_REF_NAME" = "v${{ steps.version.outputs.version }}" ] || {
+            echo "Tag $GITHUB_REF_NAME != v${{ steps.version.outputs.version }}"; exit 1; }
+
+  build:
+    needs: get-version
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller pillow
+      - name: Build Windows executable
+        run: python scripts/build_exe.py
+      - name: Package exe with version
+        shell: bash
+        run: |
+          VERSION=${{ needs.get-version.outputs.version }}
+          mkdir -p release
+          cp dist/CordInsight.exe "release/CordInsight-v${VERSION}-Windows.exe"
+      - name: Create or Update Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: CordInsight ${{ github.ref_name }}
+          files: release/CordInsight-v${{ needs.get-version.outputs.version }}-Windows.exe
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
