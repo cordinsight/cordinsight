@@ -54,7 +54,10 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: CordInsight ${{ github.ref_name }}
-          files: release/CordInsight-v${{ needs.get-version.outputs.version }}-Windows.exe
+          files: |
+            release/CordInsight-v${{ needs.get-version.outputs.version }}-Windows.exe
+            LICENSE
+            THIRD_PARTY_NOTICES.md
           draft: false
           prerelease: false
         env:

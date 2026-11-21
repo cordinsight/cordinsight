@@ -84,6 +84,7 @@ cordinsight/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project overview
 ├── LICENSE
+├── THIRD_PARTY_NOTICES.md   # licenses for the FFmpeg builds bundled in the exe
 ├── .github/workflows/       # CI: build & release the Windows exe
 │   └── build.yml
 ├── assets/                  # icon + logo images (bundled into the exe)

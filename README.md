@@ -344,7 +344,13 @@ python cordinsight.py
 
 ## License
 
-**Proprietary — All Rights Reserved.** Copyright (c) 2026 CordInsight. This software is proprietary and confidential; unauthorized copying, distribution, modification, or use is prohibited. See the [LICENSE](LICENSE) file for details.
+Copyright (C) 2026 Riham Jameel, Ammar Alhajmee, Krys Strand
+
+CordInsight is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License version 3** (GPL-3.0) as published by the Free Software Foundation. You may use it for any purpose, including commercially; if you distribute it or a modified version, you must make the complete source code available under the same license.
+
+CordInsight is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [LICENSE](LICENSE) file for the full terms.
+
+The Windows executable also bundles FFmpeg, which is covered by its own licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 
