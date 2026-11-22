@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use CordInsight in your research, please cite it as below, including the version you used."
+type: software
+title: "CordInsight: Zebrafish Behavioral Tracking"
+abstract: >-
+  CordInsight is a desktop application for tracking zebrafish (Danio rerio)
+  movement in recorded video. Researchers draw a free-form arena and named
+  observation zones, calibrate to real-world units, and measure time and
+  entries per zone, distance traveled and speed. Results are exported to
+  Excel, with a heatmap of where the animal spent its time. Tracking uses
+  static-background subtraction, persistent contour tracking and offline
+  gap reconstruction.
+authors:
+  - given-names: Riham
+    family-names: Jameel
+  - given-names: Ammar
+    family-names: Alhajmee
+  - given-names: Krys
+    family-names: Strand
+repository-code: "https://github.com/cordinsight/cordinsight"
+license: GPL-3.0-only
+keywords:
+  - zebrafish
+  - Danio rerio
+  - behavioral tracking
+  - animal behavior
+  - video tracking
+  - neuroscience

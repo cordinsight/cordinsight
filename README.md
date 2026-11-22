@@ -342,6 +342,16 @@ python cordinsight.py
 
 ---
 
+## Citing CordInsight
+
+If you use CordInsight in published research, please cite it. The **Cite this repository** button on the [GitHub page](https://github.com/cordinsight/cordinsight) gives APA and BibTeX versions, or you can use:
+
+> Jameel, R., Alhajmee, A., & Strand, K. (2026). *CordInsight: Zebrafish Behavioral Tracking* (Version 0.0.1) [Computer software]. https://github.com/cordinsight/cordinsight
+
+Replace the version with the one you used. It is shown in the app's title bar. Tracking results can differ between versions, so the version is part of what makes your analysis reproducible. The citation details are kept in [CITATION.cff](CITATION.cff).
+
+---
+
 ## License
 
 Copyright (C) 2026 Riham Jameel, Ammar Alhajmee, Krys Strand
