@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.0.1</strong><br>
+  <strong>Version 0.0.2</strong><br>
   <em>Zebrafish Behavioral Tracking Made Simple</em>
 </p>
 
@@ -478,4 +478,4 @@ When you have multiple videos with the **same experimental setup and encoded pix
 
 ---
 
-*CordInsight v0.0.1 - User Guide*
+*CordInsight v0.0.2 - User Guide*

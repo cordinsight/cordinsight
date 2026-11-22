@@ -69,7 +69,7 @@ from PIL import Image, ImageTk
 
 APP_NAME = "CordInsight"
 APP_SUBTITLE = "Danio Rerio Tracking"
-APP_VERSION = "0.0.1"
+APP_VERSION = "0.0.2"
 
 # Colors (Light theme with Maroon, Gold, and Slate accents)
 # Maroon: #6C1D45 | Gold: #EAAA00 | Slate: #333F48

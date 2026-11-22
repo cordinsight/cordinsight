@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.0.1</strong>
+  <strong>Version 0.0.2</strong>
 </p>
 
 This guide explains how to set up a development environment, modify the codebase, add features, and build working executables.

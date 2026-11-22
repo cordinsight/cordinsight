@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Version 0.0.1</strong>
+  <strong>Version 0.0.2</strong>
 </p>
 
 A professional behavioral tracking application for analyzing zebrafish (Danio rerio) movement in video footage. Designed for researchers and scientists studying zebrafish behavior in controlled environments.
@@ -346,7 +346,7 @@ python cordinsight.py
 
 If you use CordInsight in published research, please cite it. The **Cite this repository** button on the [GitHub page](https://github.com/cordinsight/cordinsight) gives APA and BibTeX versions, or you can use:
 
-> Jameel, R., Alhajmee, A., & Strand, K. (2026). *CordInsight: Zebrafish Behavioral Tracking* (Version 0.0.1) [Computer software]. https://github.com/cordinsight/cordinsight
+> Jameel, R., Alhajmee, A., & Strand, K. (2026). *CordInsight: Zebrafish Behavioral Tracking* (Version 0.0.2) [Computer software]. https://github.com/cordinsight/cordinsight
 
 Replace the version with the one you used. It is shown in the app's title bar. Tracking results can differ between versions, so the version is part of what makes your analysis reproducible. The citation details are kept in [CITATION.cff](CITATION.cff).
 
@@ -364,4 +364,4 @@ The Windows executable also bundles FFmpeg, which is covered by its own licenses
 
 ---
 
-*CordInsight v0.0.1 - Zebrafish Behavioral Tracking Made Simple*
+*CordInsight v0.0.2 - Zebrafish Behavioral Tracking Made Simple*
