@@ -8,6 +8,10 @@
   <strong>Version 0.0.2</strong>
 </p>
 
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.24446828"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24446828.svg" alt="DOI 10.5281/zenodo.24446828"></a>
+</p>
+
 A professional behavioral tracking application for analyzing zebrafish (Danio rerio) movement in video footage. Designed for researchers and scientists studying zebrafish behavior in controlled environments.
 
 ---
@@ -344,11 +348,15 @@ python cordinsight.py
 
 ## Citing CordInsight
 
-If you use CordInsight in published research, please cite it. The **Cite this repository** button on the [GitHub page](https://github.com/cordinsight/cordinsight) gives APA and BibTeX versions, or you can use:
+If you use CordInsight in published research, please cite the version you used. It is shown in the app's title bar. Tracking results can differ between versions, so citing the exact version is part of what makes your analysis reproducible.
 
-> Jameel, R., Alhajmee, A., & Strand, K. (2026). *CordInsight: Zebrafish Behavioral Tracking* (Version 0.0.2) [Computer software]. https://github.com/cordinsight/cordinsight
+Every release is archived on [Zenodo](https://doi.org/10.5281/zenodo.24446828) with its own DOI. For example, to cite version 0.0.2:
 
-Replace the version with the one you used. It is shown in the app's title bar. Tracking results can differ between versions, so the version is part of what makes your analysis reproducible. The citation details are kept in [CITATION.cff](CITATION.cff).
+> Jameel, R., Alhajmee, A., & Strand, K. (2026). *CordInsight: Zebrafish Behavioral Tracking* (Version 0.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24446829
+
+For another version, use the DOI listed for it under **Versions** on the Zenodo page. To refer to CordInsight in general rather than a specific version, use [10.5281/zenodo.24446828](https://doi.org/10.5281/zenodo.24446828), which always points to the latest release.
+
+The **Cite this repository** button on the [GitHub page](https://github.com/cordinsight/cordinsight) also gives APA and BibTeX versions. The citation details are kept in [CITATION.cff](CITATION.cff).
 
 ---
 
